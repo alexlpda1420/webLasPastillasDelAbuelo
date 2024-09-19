@@ -4,20 +4,88 @@
     padding: 0;
     box-sizing: border-box;
 }
+.content {
+    flex: 1;
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Centra todo el contenido de la sección */
+}
+.ficha {
+    margin: 0 auto; /* Centrar el contenedor */
+    text-align: center; /* Centrar el texto */
+}
+/* Lista de canciones */
+.canciones {
+    margin: 0 auto; /* Centrar el contenedor */
+    text-align: center; /* Centrar el texto */
+}
 
+.canciones ol {
+    display: inline-block; /* Para que la lista numerada también quede centrada */
+    text-align: left; /* Para que los números de la lista sigan alineados a la izquierda */
+}
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url(../assets/lpda.jpg);
+    background-image: url('https://discobiografias.wordpress.com/wp-content/uploads/2013/07/lpda2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #fff;
 }
 
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.preview {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 101;
+}
+
+/* Rest of the styles remain the same */
 .container {
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 60px auto; /* Centramos horizontalmente con auto y añadimos un margen superior */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    padding-left: 20px; /* Espacio alrededor */
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -27,103 +95,27 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
+    left: 20px;
     width: 250px;
+    height: calc(100vh - 100px); /* Adjusted for margin and navbar */
     background-color: rgba(50, 50, 50, 0.9);
     padding: 20px;
-    margin-right: 20px;
     border-radius: 10px;
-}
-
-.sidebar h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #ccc;
-}
-
-.sidebar img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #eee;
-}
-
-.sidebar .buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.sidebar .btn {
-    text-decoration: none;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    width: 100px;
-}
-
-.sidebar .btn:hover {
-    background-color: #0056b3;
-}
-
-/* Main Content Styles */
-.content {
-    flex: 1;
-    background-color: rgba(30, 30, 30, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.content h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.content h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #ccc;
-}
-
-.content p,
-.content ol {
-    font-size: 18px;
-    color: #ddd;
-}
-
-.content ol {
-    list-style: decimal;
-    margin-left: 20px;
-}
-
-.spotify, .ficha, .canciones, .video {
-    margin-bottom: 30px;
-}
-
-.video iframe {
-    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
-        margin: 10px;
+        padding-left: 0;
     }
 
     .sidebar {
+        position: relative;
         width: 100%;
+        height: auto;
         margin-bottom: 20px;
     }
 
@@ -133,56 +125,7 @@ body {
 
     .video iframe, .spotify iframe {
         width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .content h1 {
-        font-size: 24px;
-    }
-
-    .content h2 {
-        font-size: 20px;
-    }
-
-    .content p,
-    .content ol {
-        font-size: 16px;
-    }
-
-    .sidebar ul li {
-        font-size: 14px;
-    }
-
-    .btn {
-        width: 48%;
-    }
-}
-
-@media (max-width: 480px) {
-    .content h1 {
-        font-size: 22px;
-    }
-
-    .content h2 {
-        font-size: 18px;
-    }
-
-    .content p,
-    .content ol {
-        font-size: 14px;
-    }
-
-    .sidebar ul li {
-        font-size: 12px;
-    }
-
-    .btn {
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    .sidebar .btn {
-        width: 100%;
+        margin: 0 auto;
+        display: block;
     }
 }
