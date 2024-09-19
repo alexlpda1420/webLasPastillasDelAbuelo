@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Nuevo Álbum - Las Pastillas Del Abuelo</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" data-preview="Ir a la página de inicio">Inicio</a></li>
+            <li><a href="#historia" data-preview="Conoce la historia de la banda">Historia</a></li>
+            <li><a href="#discografia" data-preview="Explora la discografía completa">Discografía</a></li>
+            <li><a href="#shows" data-preview="Próximos shows en vivo">Shows</a></li>
+            <li><a href="#galeria" data-preview="Galería de fotos y videos">Galería</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main class="content">
+            <div class="titulo">
+                <h2>Nuevo Álbum</h2>
+            </div>
+            <form class="formulario-album" action="album-agregado.html" method="POST">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="ano">Año de Lanzamiento:</label>
+                <input type="number" id="ano" name="ano" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+                <label for="imagen">URL de la Imagen:</label>
+                <input type="url" id="imagen" name="imagen" placeholder="Introduce la URL de la imagen" required>
+
+                <button type="submit" class="btn">Agregar Álbum</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
