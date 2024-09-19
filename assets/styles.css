@@ -82,10 +82,11 @@ body {
 /* Rest of the styles remain the same */
 .container {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    margin: 60px auto; /* Centramos horizontalmente con auto y añadimos un margen superior */
-    max-width: 1200px; /* Limita el ancho máximo del contenedor */
-    padding-left: 20px; /* Espacio alrededor */
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px; /* Para añadir espacio alrededor del contenido */
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -104,7 +105,19 @@ body {
     overflow-y: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-
+/* Sidebar derecho */
+.sidebar-right {
+    width: 250px;
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+.sidebar-right h2, .sidebar-right p, .sidebar-right .btn {
+    text-align: center;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
     .container {
@@ -128,4 +141,44 @@ body {
         margin: 0 auto;
         display: block;
     }
+}
+
+
+/* Formulario de Registro */
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-registro label {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.formulario-registro input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-registro button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-registro button:hover {
+    background-color: #555;
 }
