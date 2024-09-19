@@ -20,3 +20,25 @@ document.querySelectorAll('.navbar ul li a').forEach(link => {
         previewBox.style.display = 'none';
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const previewLinks = document.querySelectorAll('.preview-link');
+    const previewDiv = document.getElementById('preview');
+    
+    previewLinks.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            const href = link.getAttribute('href');
+            previewDiv.innerHTML = `<iframe src="${href}" loading="lazy"></iframe>`;
+            previewDiv.style.display = 'block';
+            const rect = link.getBoundingClientRect();
+            previewDiv.style.top = `${rect.bottom + window.scrollY}px`;
+            previewDiv.style.left = `${rect.left}px`;
+        });
+
+        link.addEventListener('mouseout', () => {
+            previewDiv.style.display = 'none';
+        });
+    });
+});
+
+

@@ -1,4 +1,5 @@
 /* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 }
 .content {
     flex: 1;
-    background-color: rgba(30, 30, 30, 0.9);
+    background-color: rgba(30, 30, 30, 0.4);
     padding: 20px;
     border-radius: 10px;
     text-align: center; /* Centra todo el contenido de la sección */
@@ -37,7 +38,7 @@ body {
 /* Navbar Styles */
 .navbar {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 10px;
     position: fixed;
     top: 0;
@@ -88,7 +89,7 @@ body {
     padding-left: 20px;
     padding-right: 20px; /* Para añadir espacio alrededor del contenido */
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -99,7 +100,7 @@ body {
     left: 20px;
     width: 250px;
     height: calc(100vh - 100px); /* Adjusted for margin and navbar */
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: rgba(50, 50, 50, 0.4);
     padding: 20px;
     border-radius: 10px;
     overflow-y: auto;
@@ -108,7 +109,7 @@ body {
 /* Sidebar derecho */
 .sidebar-right {
     width: 250px;
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: rgba(50, 50, 50, 0.4);
     padding: 20px;
     border-radius: 10px;
     overflow-y: auto;
@@ -151,7 +152,7 @@ body {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: rgba(50, 50, 50, 0.4);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -190,7 +191,7 @@ body {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: rgba(50, 50, 50, 0.4);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -251,7 +252,7 @@ body {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: rgba(50, 50, 50, 0.4);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -304,7 +305,7 @@ body {
 /* Estilo para el sidebar izquierdo */
 .sidebar-left {
     width: 250px;
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: rgba(50, 50, 50, 0.4);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -357,4 +358,23 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+/* Estilo para la vista previa */
+.preview {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 320px; /* Ancho de la vista previa */
+    height: 180px; /* Altura de la vista previa */
+    overflow: hidden;
+}
+
+.preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
