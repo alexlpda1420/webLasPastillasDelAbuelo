@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar .btn {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.sidebar .btn:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content .spotify {
+    margin-bottom: 20px;
+}
+
+.ficha, .canciones, .video {
+    margin-bottom: 30px;
+}
+
+.ficha h2, .canciones h2, .video h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ficha p, .canciones ol {
+    font-size: 16px;
+}
+
+.canciones ol {
+    list-style: decimal;
+    margin-left: 20px;
+}
