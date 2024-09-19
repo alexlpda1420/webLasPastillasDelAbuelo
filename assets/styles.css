@@ -182,3 +182,65 @@ body {
 .formulario-registro button:hover {
     background-color: #555;
 }
+
+/* Formulario de Login */
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-login label {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.formulario-login input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-login button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-login button:hover {
+    background-color: #555;
+}
+
+/* Estilo para el div de registro */
+.registro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registro p {
+    margin-bottom: 10px;
+}
+
+.registro a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.registro a:hover {
+    background-color: #555;
+}
