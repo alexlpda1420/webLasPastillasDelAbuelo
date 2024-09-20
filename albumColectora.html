@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Las Pastillas Del Abuelo</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/pildora.png" />
+  </head>
+
+  <body>
+    <h1>Las Pastillas Del Abuelo</h1>
+    <!-- Navbar -->
+    <nav class="navbar">
+        
+      <ul>
+          <li>
+              <a href="index.html" data-preview="Ir a la página de inicio" class="preview-link">Inicio</a>
+          </li>
+          <li>
+              <a href="historia.html" data-preview="Conoce la historia de la banda" class="preview-link">Historia</a>
+          </li>
+          <li>
+              <a href="discografia.html" data-preview="Explora la discografía completa" class="preview-link">Discografía</a>
+          </li>
+          <li>
+              <a href="#shows" data-preview="Próximos shows en vivo">Shows</a>
+          </li>
+          <li>
+              <a href="#galeria" data-preview="Galería de fotos y videos">Galería</a>
+          </li>
+      </ul>
+  </nav>
+
+
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Informacion del disco</h2>
+        <img
+          src="assets/album-porcolectora.jpg"
+          alt="Imagen del disco"
+          class="img-disco"
+        />
+        <ul>
+          <li><strong>Nombre de Album:</strong> Por Colectora</li>
+          <li><strong>Año:</strong> 2005</li>
+          <li><strong>Productora</strong> Discos Crack</li>
+        </ul>
+        <div class="buttons">
+          <a href="http://comprar-disco.com" class="btn" target="_blank"
+            >Comprar</a
+          >
+          <a href="htto:/descargar-disco.com" class="btn" target="_blank"
+            >Descargar</a
+          >
+
+          <p>Agrega un nuevo album</p>
+          <a href="addAlbum.html">Nuevo album</a>
+        </div>
+      </aside>
+
+      <main class="content">
+        <h1>Las Pastillas Del Abuelo</h1>
+        <div class="spotify">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/album/0sLGjYs4ry9hr8AtQVz0SL?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <section class="ficha">
+          <h2>Ficha Técnica del Disco</h2>
+          <p>
+            Este disco fue grabado, mezclado y masterizado durante el mes de
+            Agosto del 2005 en estudios “El Zoológico” por Augusto Milharcic –
+            Producción Artística: Ramiro Quinteros – Producción ejecutiva: Juan
+            Pablo Fernández – Diseño gráfico: Joaco – Las Pastillas del Abuelo –
+            Fotografía: Pablo Lucena. Las Pastillas del Abuelo son… Bateria y
+            percusión: Juan Comas Piano y teclados: Alejandro Mondelo Voz y
+            Armónicas: Juan “Piti” Fernandez Bajo: Santiago Bogisich Guitarras:
+            Diego “Bochi” Bozzalla Saxos: Joel Barbeito Guitarras: Fernando
+            Vecchio
+          </p>
+        </section>
+
+        <section class="canciones">
+          <h2>Lista de Canciones</h2>
+          <ol>
+            <li>Jose</li>
+            <li>Solo Dios (Almafuerte)</li>
+            <li>Peldaño</li>
+            <li>Saber Cuando Parar</li>
+            <li>Cubano</li>
+            <li>Skalipso</li>
+            <li>Cerveza</li>
+            <li>Oscarcito</li>
+            <li>Perdido (Chakarera)</li>
+            <li>Lo + Fino</li>
+            <li>La Casada</li>
+            <li>Resulta Imposible</li>
+          </ol>
+        </section>
+
+        <section class="video">
+          <h2>Video Promocional</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XhN_d6Ry08U?si=pj3XYhs2VlKf5liy"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </main>
+      <aside class="sidebar-right">
+        <h2>Registro</h2>
+        <p>Regístrate para ser parte de la comunidad pastillera.</p>
+        <a href="signUp.html" class="btn">Registrarse</a>
+        <p>Si ya tenes usuario ingresa aca</p>
+        <a href="login.html" class="btn">Login</a>
+      </aside>
+    </div>
+    <div id="preview" class="preview"></div>
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>
