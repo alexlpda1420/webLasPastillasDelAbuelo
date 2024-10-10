@@ -422,6 +422,25 @@ body {
     margin: 0;
 }
 
+/* Estilos para el botón "Eliminar" */
+.eliminar-btn {
+    margin-top: 10px;
+    background-color: #e74c3c; /* Rojo para indicar acción de eliminación */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Hace que el botón ocupe todo el ancho del álbum */
+}
+
+.eliminar-btn:hover {
+    background-color: #c0392b;
+}
+
+
+
 @media (max-width: 1024px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr); /* Repartimos en 2 columnas en pantallas medianas */
@@ -477,5 +496,105 @@ body {
     .history-text {
         font-size: 1em;
         padding: 10px;
+    }
+}
+
+/* Estilos para la página de Shows */
+.container h1 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.shows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.show-item {
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+}
+
+.band-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.show-date {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.show-place {
+    color: #ddd;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.eliminar-btn {
+    /* Estilos existentes para eliminar-btn si están presentes */
+}
+
+/* Estilos para el mensaje personalizado */
+.user-message {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Estilos para botones deshabilitados */
+.btn[disabled], .btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Estilos para la estrella de favoritos */
+.favorite-star {
+    color: gold;
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+/* Estilos para el carrusel si está presente */
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    .show-date {
+        font-weight: bold;
+    }
+
+    .shows-grid {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    }
+
+    .show-item {
+        margin-bottom: 20px;
+    }
+
+    .band-logo {
+        width: 80px;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .user-message {
+        font-size: 1.2em;
     }
 }

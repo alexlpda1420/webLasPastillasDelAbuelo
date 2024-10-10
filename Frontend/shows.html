@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Próximos Shows - Las Pastillas del Abuelo</title>
+    <link rel="stylesheet" href="../Frontend/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Frontend/assets/pildora.png"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a
+            href="index.html"
+            data-preview="Ir a la página de inicio"
+            class="preview-link"
+            >Inicio</a
+          >
+        </li>
+        <li>
+          <a
+            href="historia.html"
+            data-preview="Conoce la historia de la banda"
+            class="preview-link"
+            >Historia</a
+          >
+        </li>
+        <li>
+          <a
+            href="discografia.html"
+            data-preview="Explora la discografía completa"
+            class="preview-link"
+            >Discografía</a
+          >
+        </li>
+        <li>
+          <a href="shows.html" data-preview="Próximos shows en vivo">Shows</a>
+        </li>
+        <li>
+          <a href="#galeria" data-preview="Galería de fotos y videos"
+            >Galería</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+      <h1>Próximos Shows</h1>
+      <div class="shows-grid">
+        <!-- Show 1 -->
+        <div class="show-item">
+          <img
+            src="assets/lpdaicon.jpg"
+            alt="Logo de la Banda"
+            class="band-logo"
+          />
+          <p class="show-date">25 de Noviembre, 2024</p>
+          <p class="show-place">Estadio Luna Park, Buenos Aires</p>
+          <!-- Suponiendo que hay tickets disponibles para este show -->
+          <a
+            href="#"
+            class="btn"
+            data-place="Estadio Luna Park, Buenos Aires"
+            onclick="getTickets('Estadio Luna Park, Buenos Aires')"
+            >Comprar Ticket</a
+          >
+        </div>
+        <!-- Show 2 -->
+        <div class="show-item">
+          <img
+            src="assets/lpdaicon.jpg"
+            alt="Logo de la Banda"
+            class="band-logo"
+          />
+          <p class="show-date">10 de Diciembre, 2024</p>
+          <p class="show-place">Teatro Gran Rex, Buenos Aires</p>
+          <!-- Suponiendo que no hay tickets disponibles para este show -->
+          <a
+            href="#"
+            class="btn"
+            data-place="Teatro Gran Rex, Buenos Aires"
+            onclick="getTickets('Teatro Gran Rex, Buenos Aires')"
+            >Comprar Ticket</a
+          >
+        </div>
+        <!-- Show 3 -->
+        <div class="show-item">
+          <img
+            src="assets/lpdaicon.jpg"
+            alt="Logo de la Banda"
+            class="band-logo"
+          />
+          <p class="show-date">5 de Enero, 2025</p>
+          <p class="show-place">Teatro Colón, Buenos Aires</p>
+          <!-- Suponiendo que hay tickets disponibles para este show -->
+          <a
+            href="#"
+            class="btn"
+            data-place="Teatro Colón, Buenos Aires"
+            onclick="getTickets('Teatro Colón, Buenos Aires')"
+            >Comprar Ticket</a
+          >
+        </div>
+        <!-- Show 4 -->
+        <div class="show-item">
+          <img
+            src="assets/lpdaicon.jpg"
+            alt="Logo de la Banda"
+            class="band-logo"
+          />
+          <p class="show-date">20 de Enero, 2025</p>
+          <p class="show-place">Córdoba Rock Arena, Córdoba</p>
+          <!-- Suponiendo que no hay tickets disponibles para este show -->
+          <a
+            href="#"
+            class="btn"
+            data-place="Córdoba Rock Arena, Córdoba"
+            onclick="getTickets('Córdoba Rock Arena, Córdoba')"
+            >Comprar Ticket</a
+          >
+        </div>
+      </div>
+
+      <!-- Sección para mensajes personalizados -->
+      <div class="user-message">
+        <span id="welcome"></span>
+      </div>
+    </div>
+
+    <!-- Footer similar al index -->
+    <footer>
+      <p>
+        &copy; 2024 Las Pastillas del Abuelo. Todos los derechos reservados.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Frontend/js/shows.js"></script>
+  </body>
+</html>

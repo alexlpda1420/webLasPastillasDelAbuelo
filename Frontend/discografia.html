@@ -1,115 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discografia - Las Pastillas Del Abuelo</title>
     <link rel="stylesheet" href="../Frontend/css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="../Frontend/assets/pildora.png" />
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Frontend/assets/pildora.png"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        
-        <ul>
-            <li>
-                <a href="index.html" data-preview="Ir a la página de inicio" class="preview-link">Inicio</a>
-            </li>
-            <li>
-                <a href="historia.html" data-preview="Conoce la historia de la banda" class="preview-link">Historia</a>
-            </li>
-            <li>
-                <a href="discografia.html" data-preview="Explora la discografía completa" class="preview-link">Discografía</a>
-            </li>
-            <li>
-                <a href="#shows" data-preview="Próximos shows en vivo">Shows</a>
-            </li>
-            <li>
-                <a href="#galeria" data-preview="Galería de fotos y videos">Galería</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a
+            href="index.html"
+            data-preview="Ir a la página de inicio"
+            class="preview-link"
+            >Inicio</a
+          >
+        </li>
+        <li>
+          <a
+            href="historia.html"
+            data-preview="Conoce la historia de la banda"
+            class="preview-link"
+            >Historia</a
+          >
+        </li>
+        <li>
+          <a
+            href="discografia.html"
+            data-preview="Explora la discografía completa"
+            class="preview-link"
+            >Discografía</a
+          >
+        </li>
+        <li>
+          <a href="#shows" data-preview="Próximos shows en vivo">Shows</a>
+        </li>
+        <li>
+          <a href="#galeria" data-preview="Galería de fotos y videos"
+            >Galería</a
+          >
+        </li>
+      </ul>
     </nav>
 
-
     <div class="container-discografia">
-        <h1>DISCOGRAFIA</h1>
-        <div class="grid-container">
-            <!-- Álbum 1 -->
-            <div class="album-item">
-                <a href="albumColectora.html">
-                    <img src="assets/album-porcolectora.jpg" alt="Álbum 1">
-                    <p>Por Colectora</p>
-                </a>
-            </div>
-            <!-- Álbum 2 -->
-            <div class="album-item">
-                <a href="albumRojo.html">
-                    <img src="assets/album-discorojo.jpg" alt="Álbum 2">
-                    <p>Disco Rojo</p>
-                </a>
-            </div>
-            <!-- Álbum 3 -->
-            <div class="album-item">
-                <a href="albumCrisis.html">
-                    <img src="assets/album-crisis.jpg" alt="Álbum 3">
-                    <p>Crisis</p>
-                </a>
-            </div>
-            <div class="album-item">
-                <a href="albumVersiones.html">
-                    <img src="assets/album-versiones.jpg" alt="Álbum 3">
-                    <p>Versiones</p>
-                </a>
-            </div>
-            <div class="album-item">
-                <a href="albumKermesse.html">
-                    <img src="assets/album-kermesse.jpg" alt="Álbum 3">
-                    <p>En Vivo en la Kermesse</p>
-                </a>
-            </div>
-            <div class="album-item">
-                <a href="albumLunaPark.html">
-                    <img src="assets/album-lunapark.jpg" alt="Álbum 3">
-                    <p>10 Años (En Vivo Desde el Luna Park</p>
-                </a>
-            </div>
-            <div class="album-item">
-                <a href="albumBarrio.html">
-                    <img src="assets/album-barrio.jpg" alt="Álbum 3">
-                    <p>El Barrio en Sus Puños</p>
-                </a>
-            </div>
-            <div class="album-item">
-                <a href="albumDesafios.html">
-                    <img src="assets/album-desafios.jpg" alt="Álbum 3">
-                    <p>Desafíos</p>
-                </a>
-            </div>
-            <div class="album-item">
-                <a href="albumPaaradojas.html">
-                    <img src="assets/album-paradojas.jpg" alt="Álbum 3">
-                    <p>Paradojas</p>
-                </a>
-            </div>
-            <div class="album-item">
-                <a href="albumVivo.html">
-                    <img src="assets/album-vivo.jpg" alt="Álbum 3">
-                    <p>Vivo de Pastillas</p>
-                </a>
-            </div>
-            <div class="album-item">
-                <a href="album2020.html">
-                    <img src="assets/album-2020.webp" alt="Álbum 3">
-                    <p>2020</p>
-                </a>
-            </div>
-        
-            
-            <!-- Agregar el resto de los álbumes -->
-            <!-- Álbum 4 al Álbum 11 -->
+      <h1>DISCOGRAFIA</h1>
+      <div class="grid-container">
+        <!-- Álbum 1 -->
+        <div class="album-item"  data-album-name="Por Colectora">
+          <a href="albumColectora.html">
+            <img src="assets/album-porcolectora.jpg" alt="Álbum 1" />
+            <p>Por Colectora</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
         </div>
+        <!-- Álbum 2 -->
+        <div class="album-item" data-album-name="Las Pastillas del Abuelo">
+          <a href="albumRojo.html">
+            <img src="assets/album-discorojo.jpg" alt="Álbum 2" />
+            <p>Disco Rojo</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <!-- Álbum 3 -->
+        <div class="album-item" data-album-name="Crisis">
+          <a href="albumCrisis.html">
+            <img src="assets/album-crisis.jpg" alt="Álbum 3" />
+            <p>Crisis</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <div class="album-item" data-album-name="Versiones">
+          <a href="albumVersiones.html">
+            <img src="assets/album-versiones.jpg" alt="Álbum 3" />
+            <p>Versiones</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <div class="album-item" data-album-name="Kermesse">
+          <a href="albumKermesse.html">
+            <img src="assets/album-kermesse.jpg" alt="Álbum 3" />
+            <p>En Vivo en la Kermesse</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <div class="album-item" data-album-name="LunaPark">
+          <a href="albumLunaPark.html">
+            <img src="assets/album-lunapark.jpg" alt="Álbum 3" />
+            <p>10 Años (En Vivo Desde el Luna Park</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <div class="album-item" data-album-name="Barrio">
+          <a href="albumBarrio.html">
+            <img src="assets/album-barrio.jpg" alt="Álbum 3" />
+            <p>El Barrio en Sus Puños</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <div class="album-item" data-album-name="Desafíos">
+          <a href="albumDesafios.html">
+            <img src="assets/album-desafios.jpg" alt="Álbum 3" />
+            <p>Desafíos</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <div class="album-item" data-album-name="Paradojas">
+          <a href="albumPaaradojas.html">
+            <img src="assets/album-paradojas.jpg" alt="Álbum 3" />
+            <p>Paradojas</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <div class="album-item" data-album-name="Vivo">
+          <a href="albumVivo.html">
+            <img src="assets/album-vivo.jpg" alt="Álbum 3" />
+            <p>Vivo de Pastillas</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+        <div class="album-item" data-album-name="2020">
+          <a href="album2020.html">
+            <img src="assets/album-2020.webp" alt="Álbum 3" />
+            <p>2020</p>
+          </a>
+          <button class="btn eliminar-btn">Eliminar</button>
+        </div>
+      </div>
     </div>
 
-
     <script src="../Frontend/js/scripts.js"></script>
-</body>
+
+     <!-- Incluir favoritos.js -->
+     <script src="../Frontend/js/favoritos.js"></script> <!-- Vincula el archivo JS específico para favoritos -->
+  </body>
 </html>
