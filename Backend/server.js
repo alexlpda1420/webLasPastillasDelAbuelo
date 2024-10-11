@@ -3,6 +3,7 @@
 // mongodb+srv://aeroldan:N4p01420$$@clasemongo.q4wxy.mongodb.net/?retryWrites=true&w=majority&appName=ClaseMongo
 
 
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
