@@ -1,177 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Las Pastillas Del Abuelo</title>
-    <link rel="stylesheet" href="../Frontend/css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="../Frontend/assets/pildora.png" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Las Pastillas Del Abuelo</title>
+  <link rel="stylesheet" href="../Frontend/css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="../Frontend/assets/pildora.png" />
 </head>
 
-  <body>
-    <h1>Las Pastillas Del Abuelo</h1>
-    <!-- Navbar -->
-    <nav class="navbar">
+<body>
+  <h1>Las Pastillas Del Abuelo</h1>
+  <!-- Navbar -->
+  <nav class="navbar">
+        
+    <ul>
+        <li>
+            <a href="index.html" data-preview="Ir a la página de inicio">Inicio</a>
+        </li>
+        <li>
+            <a href="historia.html" data-preview="Conoce la historia de la banda" >Historia</a>
+        </li>
+        <li>
+            <a href="discografia.html" data-preview="Explora la discografía completa" >Discografía</a>
+        </li>
+        <li>
+            <a href="shows.html" data-preview="Próximos shows en vivo" >Shows</a>
+        </li>
+        <li>
+            <a href="#galeria" data-preview="Galería de fotos y videos">Galería</a>
+        </li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Informacion del disco</h2>
+      <img src="assets/album-crisis.jpg" alt="Imagen del disco" class="img-disco" />
       <ul>
-        <li>
-          <a
-            href="index.html"
-            data-preview="Ir a la página de inicio"
-            class="preview-link"
-            >Inicio</a
-          >
-        </li>
-        <li>
-          <a
-            href="historia.html"
-            data-preview="Conoce la historia de la banda"
-            class="preview-link"
-            >Historia</a
-          >
-        </li>
-        <li>
-          <a
-            href="discografia.html"
-            data-preview="Explora la discografía completa"
-            class="preview-link"
-            >Discografía</a
-          >
-        </li>
-        <li>
-          <a href="#shows" data-preview="Próximos shows en vivo">Shows</a>
-        </li>
-        <li>
-          <a href="#galeria" data-preview="Galería de fotos y videos"
-            >Galería</a
-          >
-        </li>
+        <li><strong>Nombre de Album:</strong> Crisis</li>
+        <li><strong>Año:</strong> 2008</li>
+        <li><strong>Productora</strong> Discos Crack</li>
       </ul>
-    </nav>
+      <div class="buttons">
+        <a href="http://comprar-disco.com" class="btn" target="_blank">Comprar</a>
+        <a href="htto:/descargar-disco.com" class="btn" target="_blank">Descargar</a>
 
-    <div class="container">
-      <aside class="sidebar">
-        <h2>Informacion del disco</h2>
-        <img
-          src="assets/album-crisis.jpg"
-          alt="Imagen del disco"
-          class="img-disco"
-        />
-        <ul>
-          <li><strong>Nombre de Album:</strong> Crisis</li>
-          <li><strong>Año:</strong> 2008</li>
-          <li><strong>Productora</strong> Discos Crack</li>
-        </ul>
-        <div class="buttons">
-          <a href="http://comprar-disco.com" class="btn" target="_blank"
-            >Comprar</a
-          >
-          <a href="htto:/descargar-disco.com" class="btn" target="_blank"
-            >Descargar</a
-          >
+        <p>Agrega un nuevo album</p>
+        <a href="addAlbum.html">Nuevo album</a>
+      </div>
+    </aside>
 
-          <p>Agrega un nuevo album</p>
-          <a href="addAlbum.html">Nuevo album</a>
-        </div>
-      </aside>
+    <main class="content">
+      <h1>Crisis</h1>
+      <div class="spotify">
+        <iframe style="border-radius: 12px"
+          src="https://open.spotify.com/embed/album/6VW6vrsXtRe6IFPjJULhXo?utm_source=generator" width="100%"
+          height="352" frameborder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
 
-      <main class="content">
-        <h1>Crisis</h1>
-        <div class="spotify">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/album/6VW6vrsXtRe6IFPjJULhXo?utm_source=generator"
-            width="100%"
-            height="352"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </div>
+      <section class="ficha">
+        <h2>Ficha Técnica del Disco</h2>
+        <p>
+          Las Pastillas del Abuelo Batería – Juan Comas / Piano y Teclados –
+          Alejandro Mondelo -Voz y Armónicas – Juna “Piti” Fernandez / Bajo –
+          Santiago Bogisich – Guitarra – Diego “Bochi” Bozzalla / Saxos – Joel
+          Barbeito / Guitarras – Fernando Vecchio STAFF Personal Manager –
+          Carlos Rocca / Stage Manager – Javier Sáenz de Tejada – Sonidista
+          -Oscar Sofio / Iluminador-Diseño de Puesta – Martín Castellano –
+          Monitorista – Guillermo Daverio / Asistente – Guillermo Lopéz /
+          Asistente – Maximiliano Ferreira / Webmaster-Fotos Carlos Castro /
+          Personal Prensa – Mariano Cabanillas Agencia Crack Dirección Gral. –
+          Eduardo Rocca / Producción & Desarrollo – Carlos Rocca / Gestión
+          Comercial – María Susana Ferreres / Ventas – Fabián Retamozo /
+          Prensa – Marisa Arias / Asist. General – Sonia Rocca / Discográfica
+          – Andrea Ciliberti Músicos Invitados Percusión – Mario Gusso
+          (4,5,11) – Luis Baer (1,2,6,7,9) – Bárbara Silva (Voces 2,5) –
+          Agustín Ronconi/cortesía Sony/BMG (Violín – 11) – Pedro
+          Borgobello/cortesía Sony/BMG (Clarinete – 11) – Ariel Dinaro
+          (Acordeón – 11) – Matías Traut (Trombón – 2,8,9,12) – Fernando Isaía
+          (Trompeta – 2,6,8,9,12) – Martín Bosa (Guitarra – 3) – Alejandro
+          Balbis, Federico Lizuain, Richard Rath, Leandro Stivelman, Valentín
+          de la Concepción, Nicolás Oviedo, Miguel Suarez (Murga – 4,12)
+          Arreglos Vientos – Fernando Isaía (6,8,9,12) / Voces – Alejandro
+          Balbis (4,12) / Musicales – Las Pastillas del Abuelo Grabación
+          Grabado por Martín “Tucan” Bosa y Álvaro Villagra en Estudio Del
+          Abasto al Pasto y Abastito Center / Asistentes: Mauricio Escobar y
+          Alejandro Russo Asistente LPA en grabación: Javier Sáenz de Tejada /
+          Mezclado por Martín Bosa en Estudio TucanSoniq / Masterizado por
+          Álvaro Villagra / Producido por Martín Bosa / Drums doc´s: Bolsa
+          Gonzalez y Aitor Graña Arte de Disco y Tapa Alejandro Fazio
+          (info@estudiouf.com.ar) – Lorena Abramovich Todas las canciones y
+          letras pertenecen a “Las Pastillas del Abuelo” – Alberto Sueiro
+          (¿Qué es Dios?)(10) – Bonus Track – “Duda” / Marcelo Monteverde –
+          Patricio Mendez – Juan “Piti” Fernandez / “Maldito y Cortamambo” –
+          Juan “Piti” Fernandez – Las Pastillas del Abuelo
+        </p>
+      </section>
 
-        <section class="ficha">
-          <h2>Ficha Técnica del Disco</h2>
-          <p>
-            Las Pastillas del Abuelo Batería – Juan Comas / Piano y Teclados –
-            Alejandro Mondelo -Voz y Armónicas – Juna “Piti” Fernandez / Bajo –
-            Santiago Bogisich – Guitarra – Diego “Bochi” Bozzalla / Saxos – Joel
-            Barbeito / Guitarras – Fernando Vecchio STAFF Personal Manager –
-            Carlos Rocca / Stage Manager – Javier Sáenz de Tejada – Sonidista
-            -Oscar Sofio / Iluminador-Diseño de Puesta – Martín Castellano –
-            Monitorista – Guillermo Daverio / Asistente – Guillermo Lopéz /
-            Asistente – Maximiliano Ferreira / Webmaster-Fotos Carlos Castro /
-            Personal Prensa – Mariano Cabanillas Agencia Crack Dirección Gral. –
-            Eduardo Rocca / Producción & Desarrollo – Carlos Rocca / Gestión
-            Comercial – María Susana Ferreres / Ventas – Fabián Retamozo /
-            Prensa – Marisa Arias / Asist. General – Sonia Rocca / Discográfica
-            – Andrea Ciliberti Músicos Invitados Percusión – Mario Gusso
-            (4,5,11) – Luis Baer (1,2,6,7,9) – Bárbara Silva (Voces 2,5) –
-            Agustín Ronconi/cortesía Sony/BMG (Violín – 11) – Pedro
-            Borgobello/cortesía Sony/BMG (Clarinete – 11) – Ariel Dinaro
-            (Acordeón – 11) – Matías Traut (Trombón – 2,8,9,12) – Fernando Isaía
-            (Trompeta – 2,6,8,9,12) – Martín Bosa (Guitarra – 3) – Alejandro
-            Balbis, Federico Lizuain, Richard Rath, Leandro Stivelman, Valentín
-            de la Concepción, Nicolás Oviedo, Miguel Suarez (Murga – 4,12)
-            Arreglos Vientos – Fernando Isaía (6,8,9,12) / Voces – Alejandro
-            Balbis (4,12) / Musicales – Las Pastillas del Abuelo Grabación
-            Grabado por Martín “Tucan” Bosa y Álvaro Villagra en Estudio Del
-            Abasto al Pasto y Abastito Center / Asistentes: Mauricio Escobar y
-            Alejandro Russo Asistente LPA en grabación: Javier Sáenz de Tejada /
-            Mezclado por Martín Bosa en Estudio TucanSoniq / Masterizado por
-            Álvaro Villagra / Producido por Martín Bosa / Drums doc´s: Bolsa
-            Gonzalez y Aitor Graña Arte de Disco y Tapa Alejandro Fazio
-            (info@estudiouf.com.ar) – Lorena Abramovich Todas las canciones y
-            letras pertenecen a “Las Pastillas del Abuelo” – Alberto Sueiro
-            (¿Qué es Dios?)(10) – Bonus Track – “Duda” / Marcelo Monteverde –
-            Patricio Mendez – Juan “Piti” Fernandez / “Maldito y Cortamambo” –
-            Juan “Piti” Fernandez – Las Pastillas del Abuelo
-          </p>
-        </section>
+      <section class="canciones">
+        <h2>Lista de Canciones</h2>
+        <ol>
+          <li>¿De Donde Vengo?</li>
+          <li>¿Hacia Donde Voy?</li>
+          <li>¿Casualidado o Causalidad?</li>
+          <li>¿Que Carajo Es El Amor?</li>
+          <li>¿Quiero Tener Razon o Ser Feliz?</li>
+          <li>¿Que Vicios Tengo?</li>
+          <li>¿Donde Esconder Tantas Manos?</li>
+          <li>¿Como Pudo Entrar En Mi?</li>
+          <li>¿Vivire A Conciencia Esta Leccion?</li>
+          <li>¿Que Es Dios?</li>
+          <li>¿Que Hago Yo Esperando Un Puto AS?</li>
+          <li>¿Me Juego El Corazon?</li>
+          <li>¿Que Pretendo No Saber?</li>
+          <li>Duda</li>
+          <li>Maldito y Cortamambo</li>
+        </ol>
+      </section>
 
-        <section class="canciones">
-          <h2>Lista de Canciones</h2>
-          <ol>
-            <li>¿De Donde Vengo?</li>
-            <li>¿Hacia Donde Voy?</li>
-            <li>¿Casualidado o Causalidad?</li>
-            <li>¿Que Carajo Es El Amor?</li>
-            <li>¿Quiero Tener Razon o Ser Feliz?</li>
-            <li>¿Que Vicios Tengo?</li>
-            <li>¿Donde Esconder Tantas Manos?</li>
-            <li>¿Como Pudo Entrar En Mi?</li>
-            <li>¿Vivire A Conciencia Esta Leccion?</li>
-            <li>¿Que Es Dios?</li>
-            <li>¿Que Hago Yo Esperando Un Puto AS?</li>
-            <li>¿Me Juego El Corazon?</li>
-            <li>¿Que Pretendo No Saber?</li>
-            <li>Duda</li>
-            <li>Maldito y Cortamambo</li>
-          </ol>
-        </section>
+      <section class="video">
+        <h2>Video Promocional</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vjczlmVR1Os?si=41hFiEBD8fSf-Yag"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+    </main>
+    <aside class="sidebar-right">
+      <h2>Registro</h2>
+      <p>Regístrate para ser parte de la comunidad pastillera.</p>
+      <a href="signUp.html" class="btn">Registrarse</a>
+      <p>Si ya tenes usuario ingresa aca</p>
+      <a href="login.html" class="btn">Login</a>
+    </aside>
+  </div>
+  <div id="preview" class="preview"></div>
+  <script src="../Frontend/js/scripts.js"></script>
+</body>
 
-        <section class="video">
-          <h2>Video Promocional</h2>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/vjczlmVR1Os?si=41hFiEBD8fSf-Yag"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </section>
-      </main>
-      <aside class="sidebar-right">
-        <h2>Registro</h2>
-        <p>Regístrate para ser parte de la comunidad pastillera.</p>
-        <a href="signUp.html" class="btn">Registrarse</a>
-        <p>Si ya tenes usuario ingresa aca</p>
-        <a href="login.html" class="btn">Login</a>
-      </aside>
-    </div>
-    <div id="preview" class="preview"></div>
-    <script src="../Frontend/js/scripts.js"></script>
-  </body>
 </html>
