@@ -111,13 +111,14 @@ body {
 .sidebar {
     left: 20px;
     width: 250px;
-    height: calc(100vh - 100px); /* Adjusted for margin and navbar */
+    height: calc(100vh - 100px); 
     background-color: rgba(50, 50, 50, 0.4);
     padding: 20px;
     border-radius: 10px;
     overflow-y: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 /* Sidebar derecho */
 .sidebar-right {
     width: 250px;

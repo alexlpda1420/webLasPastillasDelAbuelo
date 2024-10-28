@@ -42,25 +42,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* Carusel */
-
-const carousel = document.querySelector('.carousel');
-let scrollAmount = 0;
-
-function scrollCarousel(direction) {
-    const scrollStep = 300;
-    if (direction === 'right') {
-        scrollAmount += scrollStep;
-    } else {
-        scrollAmount -= scrollStep;
-    }
-    carousel.scrollTo({
-        top: 0,
-        left: scrollAmount,
-        behavior: 'smooth'
-    });
-}
-
-setInterval(() => {
-    scrollCarousel('right');
-}, 3000); // Cambia de imagen cada 3 segundos
