@@ -6,6 +6,7 @@ const router = require("./routes/index");
 const User = require("./models/Users");
 const Album = require("./models/Album");
 
+
 // Resto de tu configuración de Express
 
 const url =
@@ -13,6 +14,9 @@ const url =
 const app = express();
 // Organizador de la data
 app.use(express.json());
+
+const path = require("path");
+app.use(express.static(path.join(__dirname,"../Frontend")));
 const PORT = 3000;
 
 // Middleware - organizador de las rutas
