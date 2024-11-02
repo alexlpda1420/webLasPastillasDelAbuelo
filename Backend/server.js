@@ -5,6 +5,9 @@ const mongoose = require("mongoose");
 const router = require("./routes/index");
 const User = require("./models/Users");
 const Album = require("./models/Album");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 
 // Resto de tu configuración de Express
@@ -17,7 +20,7 @@ app.use(express.json());
 
 const path = require("path");
 app.use(express.static(path.join(__dirname,"../Frontend")));
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 app.use("/health", (req, res) => res.sendStatus(200));
 
 // Middleware - organizador de las rutas
