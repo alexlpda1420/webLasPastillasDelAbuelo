@@ -20,7 +20,7 @@ app.use(express.json());
 
 const path = require("path");
 app.use(express.static(path.join(__dirname,"../Frontend")));
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 app.use("/health", (req, res) => res.sendStatus(200));
 
 // Middleware - organizador de las rutas
