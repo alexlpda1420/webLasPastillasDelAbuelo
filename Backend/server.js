@@ -2,9 +2,9 @@
 
 const express = require("express");
 const mongoose = require("mongoose");
-const router = require("./routes/index");
-const User = require("./models/Users");
-const Album = require("./models/Album");
+const router = require("./routes/index.js");
+const User = require("./models/Users.js");
+const Album = require("./models/Album.js");
 const dotenv = require("dotenv").config();
 
 

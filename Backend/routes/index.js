@@ -3,8 +3,8 @@ const express = require("express");
 // Instancia para manejar las rutas
 const router = express.Router();
 
-const User = require("../models/Users");
-const Album = require("../models/Album");
+const User = require("../models/Users.js");
+const Album = require("../models/Album.js");
 
 // Ruta para crear un nuevo usuario
 router.post("/users", async (req, res) => {
