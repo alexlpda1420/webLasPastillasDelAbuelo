@@ -71,6 +71,24 @@
                 <label for="descripcion">Descripción:</label>
                 <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
 
+                <label for="linkSpotify">Link a Spotify:</label>
+                <input type="url" id="linkSpotify" name="linkSpotify" required>
+
+                <h3>Canciones</h3>
+                <div id="cancionesContainer">
+                    <div class="cancion">
+                    <label for="nombreCancion">Nombre de la Canción:</label>
+                    <input type="text" name="nombreCancion" required> <br>
+                
+                    <label for="duracion">Duración (en segundos):</label>
+                    <input type="number" name="duracion" required min="0"> <br>
+
+                    <label for="linkYoutube">Link a YouTube:</label>
+                    <input type="url" name="linkYoutube" required>
+                    </div>
+                </div>
+                <button type="button" id="addSong">Agregar Canción</button>
+
                 <label for="imagen">URL de la Imagen:</label>
                 <input type="url" id="imagen" name="imagen" placeholder="Introduce la URL de la imagen" required>
 

@@ -6,15 +6,35 @@ const canciónSchema = new mongoose.Schema({
         required: [true, 'El título de la canción es obligatorio.']
     },
     duración: {
-        type: String,
+        type: Number,
         required: [true, 'La duración de la canción es obligatoria.']
-    }
+    },
+    linkYoutube: {
+        type: String,
+        required: [true, 'El enlace de YouTube es obligatorio.'],
+        validate: {
+            validator: function(v) {
+                return /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//.test(v);
+            },
+            message: 'El enlace debe ser una URL válida de YouTube.'
+        }
+    } 
 });
 
 const albumSchema = new mongoose.Schema({
     título: {
         type: String,
         required: [true, 'El título es obligatorio.']
+    },
+    linkSpotify: {
+        type: String,
+        required: [true, 'El enlace al álbum en Spotify es obligatorio.'],
+        validate: {
+            validator: function(v) {
+                return /^(https?:\/\/)?(www\.)?spotify\.com\//.test(v);
+            },
+            message: 'El enlace debe ser una URL válida de Spotify.'
+        }
     },
     descripción: {
         type: String,
@@ -31,7 +51,21 @@ const albumSchema = new mongoose.Schema({
     portada: {
         type: String,
         required: [true, 'La URL de la portada es obligatoria.']
+    },
+    linkYoutube: {
+        type: String,
+        required: [true, 'El enlace de YouTube es obligatorio.'],
+        validate: {
+            validator: function(v) {
+                return /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//.test(v);
+            },
+            message: 'El enlace debe ser una URL válida de YouTube.'
+        }
     }
 });
 
-module.exports = mongoose.model('Album', albumSchema);
+const Album = mongoose.model('Album', albumSchema);
+module.exports = Album;
+
+
+

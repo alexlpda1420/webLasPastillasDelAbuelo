@@ -41,4 +41,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+async function getUsers() 
+{
+    try {
+        const response = await axios.get('http://localhost:3000/users');
+        console.log(response.data);
+    } catch (error) {
+        console.error(error);
+    }
+    
+}
+
+async function getAlbums() 
+{
+    try {
+        const response = await axios.get('http://localhost:3000/albums');
+        console.log(response.data);
+    } catch (error) {
+        console.error(error);
+    }
+    
+}
+getUsers();
+getAlbums();
+ 
+
 

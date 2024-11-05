@@ -5,22 +5,23 @@ const mongoose = require("mongoose");
 const router = require("./routes/index");
 const User = require("./models/Users");
 const Album = require("./models/Album");
-const dotenv = require("dotenv");
+const dotenv = require("dotenv").config();
 
-dotenv.config();
-
+console.log(process.env);
 
 // Resto de tu configuración de Express
 
-const url =
-  "mongodb+srv://aeroldan:N4p01420$$@clasemongo.q4wxy.mongodb.net/?retryWrites=true&w=majority&appName=ClaseMongo";
+
+const url = process.env.DATABASE;
+const PORT = process.env.PORT;
 const app = express();
 // Organizador de la data
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 const path = require("path");
 app.use(express.static(path.join(__dirname,"../Frontend")));
-const PORT = process.env.PORT || 3000;
+
 app.use("/health", (req, res) => res.sendStatus(200));
 
 // Middleware - organizador de las rutas
