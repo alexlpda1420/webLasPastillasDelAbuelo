@@ -4,7 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const router = require("./routes/index.js");
 const User = require("./models/users.js");
-const Album = require("./models/Album.js");
+const Album = require("./models/album.js");
 const dotenv = require("dotenv").config();
 
 

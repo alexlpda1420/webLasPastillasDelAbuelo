@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 const User = require("../models/users.js");
-const Album = require("../models/Album.js");
+const Album = require("../models/album.js");
 
 // Ruta para crear un nuevo usuario
 router.post("/users", async (req, res) => {
