@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function getUsers() 
 {
     try {
-        const response = await axios.get('http://localhost:3000/users');
+        const response = await axios.get('https://laspastillasdelabuelo.onrender.com/users');
         console.log(response.data);
     } catch (error) {
         console.error(error);
@@ -55,7 +55,7 @@ async function getUsers()
 async function getAlbums() 
 {
     try {
-        const response = await axios.get('http://localhost:3000/albums');
+        const response = await axios.get('https://laspastillasdelabuelo.onrender.com/albums');
         console.log(response.data);
     } catch (error) {
         console.error(error);
