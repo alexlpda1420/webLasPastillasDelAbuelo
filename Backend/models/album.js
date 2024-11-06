@@ -29,12 +29,12 @@ const albumSchema = new mongoose.Schema({
     linkSpotify: {
         type: String,
         required: [true, 'El enlace al álbum en Spotify es obligatorio.'],
-        validate: {
+       /*  validate: {
             validator: function(v) {
                 return /^(https?:\/\/)?(www\.)?spotify\.com\//.test(v);
             },
             message: 'El enlace debe ser una URL válida de Spotify.'
-        }
+        } */
     },
     descripción: {
         type: String,
@@ -55,12 +55,12 @@ const albumSchema = new mongoose.Schema({
     linkYoutube: {
         type: String,
         required: [true, 'El enlace de YouTube es obligatorio.'],
-        validate: {
+       /*  validate: {
             validator: function(v) {
                 return /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\//.test(v);
             },
             message: 'El enlace debe ser una URL válida de YouTube.'
-        }
+        } */
     }
 });
 

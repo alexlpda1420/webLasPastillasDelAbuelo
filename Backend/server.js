@@ -6,6 +6,7 @@ const router = require("./routes/index.js");
 const User = require("./models/users.js");
 const Album = require("./models/album.js");
 const dotenv = require("dotenv").config();
+const cors = require("cors");
 
 
 // Resto de tu configuración de Express
@@ -15,6 +16,7 @@ const url = "mongodb+srv://aeroldan:N4p01420$$@clasemongo.q4wxy.mongodb.net/?ret
 const PORT = process.env.PORT || 3000;
 const app = express();
 // Organizador de la data
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 

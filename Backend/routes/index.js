@@ -5,6 +5,7 @@ const router = express.Router();
 
 const User = require("../models/users.js");
 const Album = require("../models/album.js");
+const album = require("../models/album.js");
 
 // Ruta para crear un nuevo usuario
 router.post("/users", async (req, res) => {
@@ -24,9 +25,28 @@ router.post("/albums", async (req, res) => {
     await album.save();
     res.status(201).send(album);
   } catch (error) {
+    console.log('Error al agregar álbum:', error);
     res.status(400).send(error);
   }
 });
+
+router.delete('/albums/:id', (req, res) => {
+  const albumId = req.params.id;
+
+  album.destroy({ where: { id: albumId } })
+    .then(deleted => {
+      if (deleted) {
+        res.status(200).json({ message: 'Álbum eliminado correctamente' });
+      } else {
+        res.status(404).json({ message: 'Álbum no encontrado' });
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({ message: 'Error al eliminar el álbum' });
+    });
+});
+
 
 // Ruta para consultar todos los usuarios
 router.get("/users", async (req, res) => {
