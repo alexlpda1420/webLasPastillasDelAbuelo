@@ -37,7 +37,7 @@ const connectToMongo = async () => {
       );
     });
   } catch (error) {
-    console.log("Hubo un error en la conexión");
+    console.log(error);
   }
 };
 
