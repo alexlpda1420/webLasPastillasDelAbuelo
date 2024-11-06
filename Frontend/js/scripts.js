@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function getUsers() 
 {
     try {
-        const response = await axios.get('http://localhost:3000/users');
+        const response = await axios.get('https://lpda.onrender.com/users');
         console.log(response.data);
     } catch (error) {
         console.error(error);
@@ -55,7 +55,7 @@ async function getUsers()
 async function getAlbums() 
 {
     try {
-        const response = await axios.get('http://localhost:3000/albums');
+        const response = await axios.get('https://lpda.onrender.com/albums');
         console.log(response.data);
     } catch (error) {
         console.error(error);
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   
       // Ahora enviamos los datos al backend con Axios
-      axios.post('http://localhost:3000/albums', albumData)
+      axios.post('https://lpda.onrender.com/albums', albumData)
         .then(response => {
           console.log('Álbum agregado:', response.data);
           localStorage.setItem('newAlbum', JSON.stringify(response.data));
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Función para cargar todos los álbumes desde el backend
     function cargarAlbumes() {
-      axios.get('http://localhost:3000/albums')
+      axios.get('https://lpda.onrender.com/albums')
         .then(response => {
           const albums = response.data;
           albums.forEach(album => {
@@ -158,7 +158,7 @@ botonesEliminar.forEach(boton => {
     }).then((result) => {
       if (result.isConfirmed) {
         // Enviar solicitud DELETE para eliminar el álbum
-        axios.delete(`http://localhost:3000/albums/${albumId}`)
+        axios.delete(`https://lpda.onrender.com/albums/${albumId}`)
           .then(response => {
             // Mostrar mensaje con SweetAlert
             Swal.fire({
