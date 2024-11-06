@@ -599,3 +599,26 @@ body {
         font-size: 1.2em;
     }
 }
+
+/* Estilos generales para el contenedor de la galería */
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+    justify-items: center; /* Centrar las imágenes en cada celda */
+}
+
+/* Estilo para cada imagen dentro de la galería */
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de las imágenes */
+    transition: transform 0.3s ease-in-out; /* Efecto al pasar el mouse */
+}
+
+/* Efecto de hover: Aumentar ligeramente el tamaño de la imagen */
+.galeria-item img:hover {
+    transform: scale(1.05);
+}
