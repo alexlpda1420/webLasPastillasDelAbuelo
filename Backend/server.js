@@ -11,7 +11,7 @@ const dotenv = require("dotenv").config();
 // Resto de tu configuración de Express
 
 
-const url = process.env.DATABASE;
+const url = "mongodb+srv://aeroldan:N4p01420$$@clasemongo.q4wxy.mongodb.net/?retryWrites=true&w=majority&appName=ClaseMongo";
 const PORT = process.env.PORT || 3000;
 const app = express();
 // Organizador de la data
