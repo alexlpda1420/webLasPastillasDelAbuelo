@@ -1,4 +1,4 @@
-# Título del Proyecto
+Las Pastillas del Abuelo
 
 ![logo-p5](https://i.imgur.com/zuBSE5n.jpg)
 
