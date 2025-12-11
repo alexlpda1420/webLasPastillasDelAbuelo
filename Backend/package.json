@@ -92,5 +92,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "glob": "^11.1.0"
+  }
 }
